@@ -38,10 +38,10 @@ public class HistorySearchList implements Serializable{
     }
     
     private void ShowHeader(){
-        System.out.println("---------------------------------------------------------------------------------------------------");
+        System.out.println("----------------------------------------------------------------------------------");
 	System.out.printf(format, "Search Text", "Date Search");
 	System.out.println();
-        System.out.println("---------------------------------------------------------------------------------------------------");
+        System.out.println("----------------------------------------------------------------------------------");
     }
     
     private void ShowBody(HistorySearch hs){
@@ -50,7 +50,7 @@ public class HistorySearchList implements Serializable{
     }
     
     private void ShowFooter(){
-        System.out.println("---------------------------------------------------------------------------------------------------");
+        System.out.println("----------------------------------------------------------------------------------");
         System.out.println();
     }
     
