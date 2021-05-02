@@ -5,7 +5,6 @@
  */
 package pkg20424081_9;
 import java.util.*;
-import java.io.*;
 
 /**
  *
@@ -36,7 +35,7 @@ public class Main {
             System.out.println("[10]: Random slang word.");
             System.out.println("[11]: Qiz slang word.");
             System.out.println("[12]: Qiz definition.");
-            System.out.println("[13]: Exit");
+            System.out.println("[13]: Exit.");
             System.out.println("===========================================");
             Scanner scanner = new Scanner(System.in);
             System.out.print("Choose feature: ");
