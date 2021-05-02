@@ -69,7 +69,7 @@ public class SlangWordList implements Serializable{
         System.out.println();
     }
     public void ShowSlangWordList(){
-        System.out.println("============ Show Slang Words ============");
+        System.out.println("=========== Show Slang Words ===========");
         ShowHeader();
         Collection c = slangWordList.values();
         Iterator<Map.Entry<String, SlangWord>> itr = slangWordList.entrySet().iterator();
