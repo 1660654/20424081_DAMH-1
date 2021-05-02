@@ -21,6 +21,7 @@ public class HistorySearchList implements Serializable{
         }catch(Exception e){
         }
     }
+    
     private void SaveData(){
         try {
         FileOutputStream fos = new FileOutputStream("historysearchs.dat");
@@ -29,25 +30,30 @@ public class HistorySearchList implements Serializable{
         } catch (Exception e) {
         }
     }
+    
     public void AddHistorySearch(String searchtext){
         HistorySearch hs= new HistorySearch(searchtext);
         hisitorySearchList.add(0, hs);
         SaveData();
     }
+    
     private void ShowHeader(){
         System.out.println("---------------------------------------------------------------------------------------------------");
 	System.out.printf(format, "Search Text", "Date Search");
 	System.out.println();
         System.out.println("---------------------------------------------------------------------------------------------------");
     }
+    
     private void ShowBody(HistorySearch hs){
         System.out.format(format, hs.getSearchText(), hs.getDateSearch());
         System.out.println();
     }
+    
     private void ShowFooter(){
         System.out.println("---------------------------------------------------------------------------------------------------");
         System.out.println();
     }
+    
     public void ShowHistorySearchList(){
         System.out.println("============ Show History Search ============");
         ShowHeader();
