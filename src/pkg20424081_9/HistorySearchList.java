@@ -15,7 +15,7 @@ public class HistorySearchList implements Serializable{
     ArrayList<HistorySearch> hisitorySearchList = new ArrayList<>();
     public HistorySearchList(){
         try{
-            FileInputStream fis = new FileInputStream("historysearch.dat");
+            FileInputStream fis = new FileInputStream("historysearchs.dat");
             ObjectInputStream iis = new ObjectInputStream(fis);
             hisitorySearchList = (ArrayList<HistorySearch>) iis.readObject();
         }catch(Exception e){
@@ -23,7 +23,7 @@ public class HistorySearchList implements Serializable{
     }
     private void SaveData(){
         try {
-        FileOutputStream fos = new FileOutputStream("historysearch.dat");
+        FileOutputStream fos = new FileOutputStream("historysearchs.dat");
         ObjectOutputStream oos = new ObjectOutputStream(fos);
         oos.writeObject(hisitorySearchList);
         } catch (Exception e) {
