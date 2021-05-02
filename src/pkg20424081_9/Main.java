@@ -46,7 +46,7 @@ public class Main {
                     slangwordlist.ShowSlangWordList();
                     continue;
                 case "2":
-                    slangwordlist.ImportSlangWordList("slang.txt");
+                    slangwordlist.ImportSlangWordList();
                     continue;
                 case "3":
                     slangwordlist.SearchKey(historySearchList);
