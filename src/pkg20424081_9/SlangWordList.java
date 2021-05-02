@@ -50,6 +50,7 @@ public class SlangWordList implements Serializable{
                     slangWordList.put(employee[0],slw);
                 }
             }
+            System.out.println("Import slang words success!");
         }catch (IOException e){
             System.out.println("File doesn't exits!");
         }
@@ -294,6 +295,7 @@ public class SlangWordList implements Serializable{
         while(true){
             try {
                 str = scanner.nextLine();
+                str = str.toUpperCase();
                 if(stt.contains(str)){
                     break;
                 }
