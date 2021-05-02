@@ -85,7 +85,6 @@ public class Main {
                     flag = 1;
                     break;
             }
-
         }while(flag != 1);
     }
 }

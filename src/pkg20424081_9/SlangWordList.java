@@ -30,6 +30,7 @@ public class SlangWordList implements Serializable{
         } catch (Exception e) {
         }
     }
+    
     public void ImportSlangWordList(){
         String line = "";  
         String splitBy = "`";  
@@ -54,20 +55,24 @@ public class SlangWordList implements Serializable{
         }
         SaveData();
     }
+    
     private void ShowHeader(){
         System.out.println("---------------------------------------------------------------------------------------------------");
 	System.out.printf(format, "Slang word", "Defineitions");
 	System.out.println();
         System.out.println("---------------------------------------------------------------------------------------------------");
     }
+    
     private void ShowBody(Map.Entry<String, SlangWord> entry){
         System.out.format(format, entry.getKey(), entry.getValue().getDefinintions());
         System.out.println();
     }
+    
     private void ShowFooter(){
         System.out.println("---------------------------------------------------------------------------------------------------");
         System.out.println();
     }
+    
     public void ShowSlangWordList(){
         System.out.println("=========== Show Slang Words ===========");
         ShowHeader();
@@ -118,6 +123,7 @@ public class SlangWordList implements Serializable{
         }
         ShowFooter();
     }
+    
     public void SearchValue(HistorySearchList hsl){
         System.out.println("============ Search Definition ============");
         String searchText = "";
